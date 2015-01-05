@@ -1,0 +1,51 @@
+#Liste{
+	opacity:0;
+	transform-origin:50% 50%;
+	transform:scale(0.1);
+}
+
+#Map{
+	
+	transform-origin:50% 50%;
+
+}
+
+#Map.fadeout{
+	-webkit-animation:map-out .8s forwards;
+}
+
+@-webkit-keyframes map-out{
+	0%{opacity:1;
+		transform:scale(1);}
+	100%{opacity:0;
+		transform:scale(0.1);
+		transform:rotate(180deg);
+	}
+}
+
+
+#Liste.fadein{
+	opacity: 1;
+	transform:scale(1);
+	-webkit-transition: opacity .6s,transform .8s;
+}
+
+#Map.fadein{
+	-webkit-animation:map-in .8s forwards;
+}
+
+@-webkit-keyframes map-in{
+	0%{opacity:0;
+		transform:scale(0.1);
+		transform:rotate(-360deg);}
+	100%{opacity:1;
+		transform:scale(1);
+		transform:rotate(0deg);
+	}
+}
+	
+#Liste.fadeout{
+	opacity: 0;
+
+}
+

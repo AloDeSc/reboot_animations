@@ -1,0 +1,27 @@
+body{
+margin:0 auto;
+}
+
+
+#landing_page{
+z-index:1;
+position:fixed;
+background:blue;
+width:100%;
+height:100%;
+-webkit-animation-name:fading;
+-webkit-animation-duration: 4s;
+-webkit-animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes fading{
+	0%{}
+	100%{opacity:0;}
+}
+
+#back_page{
+position:fixed;
+background:green;
+width:100%;
+height:100%;
+}
